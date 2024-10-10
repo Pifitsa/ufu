@@ -67,7 +67,7 @@ grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' hello.c | grep -vE '\b(int|void|return|if|
 
 Написать программу для регистрации пользовательской команды (правильные права доступа и копирование в /usr/local/bin).
 
-Например, пусть программа называется reg:
+Например, пусть программа называется pifitsa:
 
 ```
 #!/bin/bash
@@ -80,4 +80,3 @@ sudo cp "$file" /usr/local/bin/
 ```
 
 В результате для banner задаются правильные права доступа и сам banner копируется в /usr/local/bin.
-![photo_5469919913117344618_y](https://github.com/user-attachments/assets/ca910a8c-889d-409c-bcb1-6019b1be6cf9)
