@@ -8,7 +8,8 @@
 
 Вывести отсортированный в алфавитном порядке список имен пользователей в файле passwd (вам понадобится grep).
 grep '.*' /etc/passwd | cut -d: -f1 | sort
-![photo_5470137324361866858_y](https://github.com/user-attachments/assets/fe5ac1f2-13de-4a0e-9d97-6c5de419fcbb)
+![Снимок экрана 2024-10-04 143910](https://github.com/user-attachments/assets/b4955197-010a-47d9-884e-cc40ebc91207)
+
 
 
 ## Задача 2
@@ -18,8 +19,7 @@ grep '.*' /etc/passwd | cut -d: -f1 | sort
 ```
 awk '{print $2, $1}' /etc/protocols | sort -nr | head -n 5
 ```
-![photo_5470137324361866866_y](https://github.com/user-attachments/assets/669a376d-e4c1-4e7d-a2df-84bd8857d50b)
-
+![Снимок экрана 2024-10-04 102928](https://github.com/user-attachments/assets/6db0e5e1-aad0-4d70-b807-ff8a4a808a7c)
 
 ## Задача 3
 
@@ -39,7 +39,8 @@ echo "+${line}+"
 echo "| ${text} |"
 echo "+${line}+"
 ```
-![photo_5474466960633881470_x](https://github.com/user-attachments/assets/e8c0deea-8a62-4128-be80-934366adb59d)
+![Снимок экрана 2024-10-04 144531](https://github.com/user-attachments/assets/c4fc9c4b-97ed-4c92-b99a-27790fb09a29)
+
 Перед отправкой решения проверьте его в ShellCheck на предупреждения.
 
 ## Задача 4
@@ -80,23 +81,3 @@ sudo cp "$file" /usr/local/bin/
 
 В результате для banner задаются правильные права доступа и сам banner копируется в /usr/local/bin.
 ![photo_5469919913117344618_y](https://github.com/user-attachments/assets/ca910a8c-889d-409c-bcb1-6019b1be6cf9)
-
-
-Общие сведения
-
-https://ru.wikipedia.org/wiki/Интерфейс_командной_строки
-https://nullprogram.com/blog/2020/08/01/
-https://habr.com/ru/post/150950/
-
-Стандарты
-
-https://www.gnu.org/prep/standards/standards.html#Command_002dLine-Interfaces
-https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html
-https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html
-
-Реализация разбора опций
-
-Питон
-
-https://docs.python.org/3/library/argparse.html#module-argparse
-https://click.palletsprojects.com/en/7.x/
