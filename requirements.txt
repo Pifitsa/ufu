@@ -1,0 +1,2 @@
+matplotlib — для построения графиков. Устанавливается через pip:
+pip install matplotlib
